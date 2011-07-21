@@ -9,8 +9,8 @@
 
 		<h1>Bitcoin Mining Data</h1>
 
-		<section>
-		</section>
+		<div id="profile">
+		</div>
 
 		<script src="steal/steal.js?mining/mining.js"></script>
 	</body>

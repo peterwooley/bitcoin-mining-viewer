@@ -4,4 +4,41 @@
 	<li>Confirmed: &#x0e3f;${confirmed_reward}</li>
 	<li>Total: &#x0e3f;${unconfirmed_reward}</li>
 </ul>
+
+<h2>Workers</h2>
+<table>
+	<thead>
+		<tr>
+			<th>Worker</th>
+			<th>Shares</th>
+			<th>Last Contact</th>
+		</tr>
+	</thead>
+	<tbody>
+	{{each $data.profile.workers}}
+		<tr>
+			<td>${name}</td>
+			<td>${shares}</td>
+			<td>${last_seen} Seconds Ago</td>
+		</tr>
+	{{/each}}
+	</tbody>
+</table>
 	
+<h2>Current Block Stats</h2> 
+<table id="stats"> 
+	<thead> 
+		<tr> 
+			<th>Duration</th> 
+			<th>Reward</th> 
+			<th>mhash</th> 
+		</tr> 
+	</thead> 
+	<tbody> 
+		<tr> 
+			<td>${stats.round_duration}</td> 
+			<td>${profile.estimated_reward}</td> 
+			<td>${profile.mhash}</td> 
+		</tr>
+	</tbody> 
+</table>  

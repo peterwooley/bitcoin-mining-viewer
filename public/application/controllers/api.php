@@ -16,7 +16,12 @@ class Api extends CI_Controller {
 	 */
 	public function profile($token) {
 		$this->load->model("profile");
-
+		
+		// Debugging stuff, we'll get to it later.
+		//$this->load->library("FirePHPCore/fb");
+		//$fp = FirePHP::getInstance(true);
+		//$fp->warn('$token', $token);
+		
 		$profile = $this->profile->get($token);
 
 		$this->_render($profile);
