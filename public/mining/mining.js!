@@ -1,0 +1,5 @@
+steal.models('profile', 'block').then(function() {
+	Profile.findOne({id: "23647-d6f58ace09a4340d7923fdf25edd6bb2"}, function(data) {
+		console.log(data);
+	});
+});
