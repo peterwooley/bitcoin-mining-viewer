@@ -1,8 +1,8 @@
 <h2>Summary</h2>
 <ul>
-	<li>Limit: &#x0e3f;${send_threshold}</li>
-	<li>Confirmed: &#x0e3f;${confirmed_reward}</li>
-	<li>Total: &#x0e3f;${unconfirmed_reward}</li>
+	<li>Limit: &#x0e3f;${profile.send_threshold}</li>
+	<li>Confirmed: &#x0e3f;${profile.confirmed_reward}</li>
+	<li>Total: &#x0e3f;${profile.unconfirmed_reward}</li>
 </ul>
 
 <h2>Workers</h2>
@@ -15,7 +15,7 @@
 		</tr>
 	</thead>
 	<tbody>
-	{{each $data.profile.workers}}
+	{{each profile.workers}}
 		<tr>
 			<td>${name}</td>
 			<td>${shares}</td>
